@@ -1,0 +1,130 @@
+﻿23.680.228
+Pedro Chirino
+
+
+Victor Chirinos 
+31.947.328
+
+
+Leví Flores
+30.017.555
+
+
+
+te vas a estructura del proyecto,
+
+son cinco carpetas y un archivo, te metes en la primera carpeta que se llama com,
+
+adentro está un archivo db.php que lo único que hace es la conexión entre la base
+
+de datos y la tabla más nada ahí si lee dice host local host deber name
+
+el nombre de la base de datos el username y el password que eso es el de sam todos los
+
+proyectos son lo mismo igual que el host es el mismo el unico que cambia es el dvn.
+
+luego la siguiente es la data, está todo el lenguaje sql,
+
+luego te vas a yes ahí está el código javascript pero igualmente
+
+lo único que haces es funciones de algunos botones y ya más nada,
+
+el estilo que están el código css, luego la carpeta vista, qué hace la carpeta vista,
+
+la carpeta vista guarda todos los archivos que son
+
+las vistas que se van a ver en el en el navegador y por ultimo
+
+el index, el index como la entrada principal, ahí está el login,
+
+entonces lo único que hace es mostrar
+
+de primero un formulario que es para iniciar sesión,
+
+qué es lo que pide el usuario y la contraseña,
+
+si uno le da al botón de olvidar contraseña cambia el formulario y pasa
+
+mostrarte un formulario con un solo campo que es para verificar si el si
+
+el usuario existe no,
+
+si el usuario existe te va a llevar a otro formulario que ahí
+
+le van a aparecer las preguntas de seguridad y un input para ingresar.
+
+el la respuesta de seguridad, si es correcto te va a llevar, sea ya ahí no te saca,
+
+no te muestra otro formulario, sea si te va mostrar a otro formulario pero
+
+llevándote a otro archivo porque todo lo que comenté fue puro en el index.php,
+
+ahora te va a llevar otro archivo que está adentro de vistas que se llama reset password,
+
+ahí lo que va mostrar es un formulario para que ese usuario pueda cambiar su contraseña,
+
+adentro de vista hay otro archivo eh que
+
+se llama inicio.php que lo único que hace es como
+
+la ventana de bienvenida que es como
+
+un ejemplo es para que muestre algo ahí adentro y tiene el botón de de cerrar
+
+sesión si te vas a index y ves en en la línea 5 a la 8 eso se llama
+
+autenticación qué es lo que hace eso de que si la session start que está en
+
+la línea dos no está activa entonces que que te dejen index pero si esa
+
+sesión star está activa te va a llevar la localización del
+
+archivo inicio.php que se encuentra en la carpeta vista,
+
+esto qué quiere decir?
+
+que si un usuario está logueado e intenta, osea ya la sesión está activa,
+
+pero en la url del navegador intenta a index.php,
+
+no lo va a llevar a ese archivo, lo va a llevar a inicio.php de vista,
+
+porque tú cuando inicias sesión en facebook y tú pones
+
+facebook no te lleva el formulario para iniciar sesión,
+
+no te lleva al inicio de tu cuenta de tu facebook me entiendes eh.
+
+eso es esto igualmente si tú te vas a inicio.php dentro
+
+de vista y ves de la línea del código cinco la ocho ves que es lo mismo,
+
+diferencia que aquí si la sesión start no está
+
+activa entonces que me lleve a index.php qué quiere decir?
+
+de que si un usuario no ha lo logueado pero intenta acceder por url
+
+a inicio.php automáticamente esto haga que lo lleve a index.php
+
+porque no tiene una sesión activa,
+
+eso es autenticación, es seguridad
+
+.qué tipo de cifrado estamos
+
+usando para la contraseña y la respuesta de seguridad es cha256 si  te vas a data virginia pisodb.sql te bajas a la línea de código
+
+17 19 y 21 ves que dice cha entre paréntesis y entre comillas
+
+simple 1 2 3 4 5 6 7 8 , 256 qué quiere decir esto que la clave es 1 2
+
+3 4 5 6 7 y 8 pero como está cerrado por cha y 256 eso significa que el sistema
+
+el lenguaje sql que va va a encriptar esa data a cha 256 es un método descifrado
+
+,abres un php eh php miami que es simplemente te vas a sam y le das donde
+
+dice más sql le das en admin y te diriges la base de datos,
+
+ahí ves que el campo está cifrado, sea si está cifrando el campo.

@@ -1,0 +1,141 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0b1120; /* Fondo azul oscuro */
+    overflow: hidden;
+}
+
+/* Contenedor principal */
+.container {
+    width: 650px;
+    height: 350px;
+    position: relative;
+    background: linear-gradient(135deg, #0f2027, #203a43, #203a43);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    animation: neon-pulse 4s infinite;
+}
+
+/* Efecto de borde neón */
+.container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 230, 255, 0.4), rgba(0, 123, 255, 0.4), rgba(0, 230, 255, 0.4));
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(10px);
+}
+
+/* División diagonal corregida */
+.form-section,
+.welcome-section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    padding: 30px;
+}
+
+.form-section {
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Rectangular para la parte izquierda */
+    background: linear-gradient(135deg, #1b2838, #203a43);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-section {
+    right: 0;
+    clip-path: polygon(1% 0, 100% 0, 100% 100%, 40% 100%); /* Línea diagonal con punto en la parte superior más a la izquierda y punto inferior más a la derecha */
+    background: linear-gradient(135deg, #004d7a, #00bf72);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid rgba(0, 230, 255, 0.5);
+}
+
+/* Efecto de texto */
+/* Estilo de texto en welcome-section */
+.welcome-section h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: -30%;
+    margin-left: 40px;
+}
+
+.welcome-section p {
+    font-size: 14px;
+    color: #c2c2c2;
+    text-align: right; /* Alineación a la derecha */
+    width: 80%;
+    margin-top: 10px; /* Eleva el texto un poco más hacia arriba */
+    margin-left: 40px; /* Alinea el texto a la izquierda */
+}
+
+
+/* Estilo de inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b2838;
+    color: white;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff;
+}
+
+/* Botón con animación refinada */
+button {
+    width: 86%;
+    padding: 12px;
+    background: linear-gradient(90deg, #00e6ff, #007bff);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Transición suave para todas las propiedades */
+    box-shadow: 0 0 10px #00e6ff, 0 0 20px rgba(0, 230, 255, 0.8);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #007bff, #00e6ff);
+    box-shadow: 0 0 20px #00e6ff, 0 0 30px rgba(0, 230, 255, 1);
+    transition: all 0.3s ease; /* Agregar transición al hover */
+}
+
+/* Puedes también modificar la transición de forma específica si prefieres que solo cambien ciertas propiedades */
+
+/* Animación del borde pulsante */
+@keyframes neon-pulse {
+    0%, 100% {
+        box-shadow: 0 0 10px #00e6ff, 0 0 20px rgba(0, 230, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px #00e6ff, 0 0 25px rgba(0, 230, 255, 0.8);
+    }
+}
